@@ -93,8 +93,10 @@ java "-Dstdout.encoding=UTF-8" -cp out graphs.Tests
 
 ---
 
+```
 cd "/mnt/c/Users/Александр/Desktop/Python/HW1"
 mkdir -p out
 javac -encoding UTF-8 -d out *.java
 java -cp out graphs.Main
 java -cp out graphs.Tests
+```
