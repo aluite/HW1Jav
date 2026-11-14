@@ -90,3 +90,11 @@ java "-Dstdout.encoding=UTF-8" -cp out graphs.Tests
 - После расчёта проверяется диагональ: `dist[i][i] < 0` — отрицательный цикл. Для пар (i, j), чей путь может пройти через такой цикл, конечный путь не выдаётся (статус `NEGATIVE_CYCLE`).
 - Алгоритм не печатает и не хранит состояние в графе, поэтому повторный запуск на том же объекте `Graph` даёт тот же ответ.
 - Для неориентированного графа (тип 2) `Graph(false).addEdge` добавляет связь в обоих направлениях.
+
+---
+
+cd "/mnt/c/Users/Александр/Desktop/Python/HW1"
+mkdir -p out
+javac -encoding UTF-8 -d out *.java
+java -cp out graphs.Main
+java -cp out graphs.Tests
